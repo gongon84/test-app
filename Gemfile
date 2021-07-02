@@ -58,3 +58,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # 追記
 # 形態素解析
 gem 'natto'
+gem 'jumanpp_ruby'
+
+# スクレイピング
+gem 'nokogiri'
