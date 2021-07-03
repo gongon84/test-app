@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+typing_words = ["日本語", "英語", "フランス語", "すいか", "おはよう", "読書"]
+
+typing_words.length.times do |i|
+    Translation.create!(
+        word: typing_words[i]
+    )
+end

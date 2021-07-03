@@ -3,6 +3,8 @@ class TranslationController < ApplicationController
   require 'natto'
   require "open-uri" #webに接続するためのライブラリ
   require "nokogiri" #クレイピングに使用するライブラリ
+  require 'romkan'
+  require 'mechanize'
 
   def index
     text = 'ななみちゃんは、今何してるの？
@@ -43,5 +45,18 @@ class TranslationController < ApplicationController
   end
 
   def key
+    @problem_ja = []
+    @problem_ro = []
+
+    @typing_words = Translation.all
+    @typing_words.each do |words|
+      @problem_ja.push(words.word)
+      @problem_ro.push(words.to_hiragana.to_roma)
+    end
+    @rand = rand(@problem_ja.length)
+
+    # railsの変数をjsへ
+    gon.problem_ja = @problem_ja
+    gon.problem_ro = @problem_ro
   end
 end
