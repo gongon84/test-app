@@ -1,0 +1,25 @@
+<div style="margin: 0 auto; text-align: center;">
+    <h1>形態素解析　練習</h1>
+
+    <div style="margin-top: 100px;">
+    <%# テスト %>
+<%
+=begin 
+%>
+        <% @text.zip(@part) do |text, part| %>
+            <% if part == '助詞' %>
+                <%= text + '、' %>
+            <% else %>
+                <%= text %>
+            <% end %>
+        <% end %>
+<%
+=end 
+%>
+        <%= @text_origin.join() %>
+        <h3><br>↓↓</h3><br>
+        <%= @text.join('') %>
+        <h3><br>ーーーーー</h3><br>
+        <%= @part %>
+    </div>
+</div>

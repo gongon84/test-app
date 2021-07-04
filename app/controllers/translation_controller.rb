@@ -7,6 +7,9 @@ class TranslationController < ApplicationController
   require 'mechanize'
 
   def index
+  end
+
+  def test
     text = 'ななみちゃんは、今何してるの？
     おじさんはななみちゃんとのデートの事を考えてるよ！
     ダメだなしっかりしろ、俺'
