@@ -62,3 +62,12 @@ gem 'jumanpp_ruby'
 
 # スクレイピング
 gem 'nokogiri'
+
+# にほんご・カナ => ローマ字変換
+gem 'romkan'
+
+# rails内の変数をjsで使う
+gem 'gon'
+
+# スクレイピング
+gem 'mechanize'

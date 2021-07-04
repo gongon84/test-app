@@ -1,3 +1,16 @@
 <div style="margin: 0 auto; text-align: center;">
-    <h1>キー判定　練習</h1>
+    <h1 id="idname">キー判定　練習</h1>
+
+    <h1>タイピング</h1>
+
+    <h3 id="problem_ja"><%= @problem_ja[@rand] %></h3>
+    <h3 id="problem_ro"><%= @problem_ro[@rand] %></h3>
+    <h3 id="key_test" style="border:2px solid black; height:30px; width:40%; margin: 0 auto;"></h3><br>
+    <h3 id="judge"></h3><br>
+    <button id="reset_btn">リセット</button>
 </div>
+
+<%# gem gonの使用 %>
+<%= include_gon %>
+<%# javascript使用 %>
+<%= javascript_pack_tag 'key' %>
