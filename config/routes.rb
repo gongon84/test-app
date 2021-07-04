@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root 'home#index'
-
+  get 'tests/index'
   get 'home/index'
   get 'translation/index'
   get 'typings/index'
+
+  root 'home#index'
 end
