@@ -71,3 +71,6 @@ gem 'gon'
 
 # スクレイピング
 gem 'mechanize'
+
+# wikipedia検索結果
+gem 'wikipedia-client'
