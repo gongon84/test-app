@@ -18,10 +18,6 @@ class TestsController < ApplicationController
     # }
   end
 
-  # def new
-  #   @test = Test.new
-  # end
-
   def create
     if Wikipedia.find(params[:keyword]).summary
       results = Wikipedia.find(params[:keyword]).summary
