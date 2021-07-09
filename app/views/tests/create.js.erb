@@ -1,0 +1,10 @@
+$("#ajax-test").html("<%= j(render 'tests/test', results: @test ) %>");
+$(".title").text("ajax実行中")
+$(".title").css("color", "red")
+$("textarea").val("");
+
+// jsが機能してるかどうか
+function test() {
+    var obj = document.getElementById("title");
+    obj.style.color = 'red';            //文字色を赤にする
+};

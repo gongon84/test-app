@@ -1,0 +1,5 @@
+<h2>検索</h2>
+<%= form_with url: tests_create_path, local: false do |f| %>
+  <%= f.text_area :keyword %>
+  <%= f.submit 'Search' %>
+<% end %>

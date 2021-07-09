@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_04_054934) do
+ActiveRecord::Schema.define(version: 2021_07_07_124107) do
+
+  create_table "tests", force: :cascade do |t|
+    t.text "test_text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "translations", force: :cascade do |t|
     t.string "word"
