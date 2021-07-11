@@ -74,3 +74,6 @@ gem 'mechanize'
 
 # wikipedia検索結果
 gem 'wikipedia-client'
+
+# bootstrap
+gem 'bootstrap', '~> 4.1.1'

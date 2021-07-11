@@ -1,0 +1,18 @@
+<div id="ajax-test">
+    <% if results %>
+        <% results.each do |result| %>
+            <h4 style="border-top: 1px solid; padding: 20px 50px; margin:0;"><%= result.content %></h4>
+            <% if (result.title === "1") %>
+                <%= link_to searches_destroy_path(id: result.id), method: :post, remote: true do %>
+                    <i id="icon-good" class="fas fa-heart fa-2x" style="color: red;"></i>
+                    <%= result.title %>
+                <% end %>
+            <% else %>
+                <%= link_to searches_good_path(id: result.id), method: :post, remote: true do %>
+                    <i id="icon-good" class="far fa-heart fa-2x" style="color: red;"></i>
+                    <%= result.title %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+</div>

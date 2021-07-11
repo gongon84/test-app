@@ -13,4 +13,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 // 追記
+//=require bootstrap
 require('jquery')

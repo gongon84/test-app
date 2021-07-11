@@ -1,0 +1,4 @@
+$("#ajax-test").html("<%= j(render 'searches/show', results: @results ) %>");
+$(".title").text("ajax実行")
+$(".title").css("color", "red")
+$("textarea").val("");

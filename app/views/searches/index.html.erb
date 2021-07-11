@@ -1,0 +1,7 @@
+<h1>Wikipedia 検索</h1>
+<div class="form-area my-5">
+    <%= render partial: 'form' %>
+</div>
+
+<h1 class="title m-5">検索結果</h1>
+<%= render partial: 'show', locals: { results: @results } %>
