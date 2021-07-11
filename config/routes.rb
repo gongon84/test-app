@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  get 'searches/index'
+  post 'searches/create'
+  post 'searches/good'
+  post 'searches/destroy'
+
   get 'tests/index'
-  post 'tests/create'
 
   get 'home/index'
   get 'translation/index'
