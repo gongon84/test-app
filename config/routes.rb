@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'searches/destroy'
 
   get 'tests/index'
+  get 'tests/game'
 
   get 'home/index'
   get 'translation/index'
