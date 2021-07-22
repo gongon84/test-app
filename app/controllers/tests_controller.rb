@@ -11,4 +11,7 @@ class TestsController < ApplicationController
       @results = Wikipedia.find(".")
     end
   end
+
+  def game
+  end
 end
