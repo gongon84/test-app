@@ -14,4 +14,7 @@ class TestsController < ApplicationController
 
   def game
   end
+
+  def vue
+  end
 end

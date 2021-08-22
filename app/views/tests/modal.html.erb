@@ -1,0 +1,20 @@
+<div class="container">
+  <h3>モーダルてすと</h3>
+
+  <%##### モーダル #####%>
+  <div class="popup" id="js-popup">
+    <%# 写真 %>
+    <div class="popup-inner">
+      <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+      <a href="#"><img src="/assets/sakura.png" alt="ポップアップ画像"></a>
+    </div>
+    <%# 黒背景 %>
+    <div class="black-background" id="js-black-bg"></div>
+  </div>
+  <%# ボタン %>
+  <button id="js-show-popup">Show Popup</button>
+  <%##### ここまで #####%>
+</div>
+
+<%# javascript使用 %>
+<%= javascript_pack_tag 'modal' %>

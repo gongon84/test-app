@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get 'tests/index'
   get 'tests/game'
+  get 'tests/modal'
 
   get 'home/index'
   get 'translation/index'
